@@ -97,7 +97,7 @@ cats = ['satjob', 'relationship', 'male_breadwinner', 'men_bettersuited', 'child
 groups = ['sex', 'region', 'education']
 
 
-app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+app = Dash(__name__, external_stylesheets=external_stylesheets)
 server = app.server
 
 app.layout  = html.Div(
