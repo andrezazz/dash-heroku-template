@@ -99,6 +99,7 @@ groups = ['sex', 'region', 'education']
 
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
 
 app.layout  = html.Div(
     [
@@ -110,7 +111,7 @@ app.layout  = html.Div(
         
         dcc.Graph(figure=table),
         
-        html.H2('Agreement With the Statement: "It is much better for everyone involved if the man is the achiever outside the home and the woman takes care of the home and family", by Sex'),
+        html.H2('Agreement With Statement'),
         
         html.Div([
             
